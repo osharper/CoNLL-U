@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
         <PackageId>Conllu</PackageId>
         <Authors>Arthur Hemmer</Authors>
         <Description>A lightweight C# CoNLL-U parser.</Description>
@@ -12,6 +11,7 @@
         <PackageTags>CONLLU;NLP;PARSER</PackageTags>
         <Title>CoNLL-U</Title>
         <PackageVersion>1.1.1</PackageVersion>
+        <TargetFrameworks>net5.0;netstandard2.1</TargetFrameworks>
     </PropertyGroup>
 
 </Project>

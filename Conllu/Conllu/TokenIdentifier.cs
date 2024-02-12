@@ -7,17 +7,17 @@ namespace Conllu
         /// <summary>
         /// The ID of the token
         /// </summary>
-        public int Id { get; init; }
+        public int Id { get; }
         
         /// <summary>
         /// In the case of a span ID (e.g. 1-2 or 3-5), the span ID is the second number of the ID
         /// </summary>
-        public int? SpanId { get; init; }
+        public int? SpanId { get; }
         
         /// <summary>
         /// In the case of an empty node ID (e.g. 1.2 or 3.5), the sub ID is the second number in the ID  
         /// </summary>
-        public int? SubId { get; init; }
+        public int? SubId { get; }
         
         public bool IsMultiwordIndex => SpanId != null;
 

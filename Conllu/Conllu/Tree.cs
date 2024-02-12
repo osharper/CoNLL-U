@@ -8,11 +8,11 @@ namespace Conllu
     public class Tree<TVertex, TConnection>: IComparable<Tree<TVertex, TConnection>>
         where TVertex: IComparable<TVertex>
     {
-        public List<Tree<TVertex, TConnection>> Children { get; init; }
+        public List<Tree<TVertex, TConnection>> Children { get; }
         
-        public TVertex Value { get; init; }
+        public TVertex Value { get; }
         
-        public TConnection Connection { get; init; }
+        public TConnection Connection { get; }
 
         public bool IsLeaf => Children.IsNullOrEmpty();
 
